@@ -1,0 +1,174 @@
+.new {
+    position: relative;
+    max-width: 1080px;
+    margin: 0 auto;
+    height: 200vh;
+   
+  }
+  
+  .new > .contents {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 두 개의 열 */
+    grid-template-rows: repeat(6, 1fr); /* 여섯 개의 행 */
+    grid-column-gap: 4px;
+    grid-row-gap: 4px;
+    position: absolute; 
+    top: 650px;
+    right: 10px;
+  }
+  
+  .new > .contents > h1 {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  
+  .new > .contents > article {
+   
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   
+    
+    background-size: cover;
+    object-fit: cover;
+    height: 200px;
+   
+    display:flex;
+    justify-content: end;
+    align-items: flex-start;
+    flex-direction: column;
+    padding:30px;
+    cursor: pointer;
+  }
+  
+  .new > .contents > article > .tag{
+    color:#FFE100;
+    font-weight : 700;
+    font-size: 16px;
+    margin-bottom: 7px;
+  }
+  .new > .contents > article > .title{
+    color:white;
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight : bold;
+   
+  }
+  .new > .contents > article > .title:hover{
+    transition: all 0.5s;
+    text-decoration: underline;
+  }
+  .new > .contents > article > .time{
+    color:white;
+    font-size:13px;
+    font-weight: bold;
+  }
+  .new > .contents > .who {
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: url("https://sttotv8prodmedia.blob.core.windows.net/mediacache/6/8/e/6/8/c/68e68ce0e73c85714922c799abfcfa6731086c28.jpg");
+  }
+  
+  .new > .contents > .ange {
+    grid-area: 1 / 2 / 2 / 3; /* 두 번째 칸 */
+    background-image: url("https://www.tottenhamhotspur.com/media/phim30ga/km1_2273.jpg?mode=crop&quality=90&width=1600");
+  }
+  
+  .new > .contents > .europa {
+    grid-area: 2 / 1 / 3 / 3; /* 첫 번째와 두 번째 열을 차지하는 영역 */
+    background-image: url("https://www.tottenhamhotspur.com/media/pv3gfoav/am027356.jpg?mode=crop&quality=90&width=1600");
+    height: 400px;
+  }
+  
+  .new > .contents > .tell {
+    grid-area: 3 / 1 / 4 / 2; /* 첫 번째 열 */
+    background-image: url("https://www.tottenhamhotspur.com/media/gjjfwh02/am019840.jpg?mode=crop&quality=90&width=1600");
+  }
+  
+  
+  .new > .contents > .photo {
+    grid-area : 3/2/4/3;
+  
+    
+    overflow: hidden;
+   
+}
+
+.new > .contents > .photo > img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+
+   
+
+}
+
+ 
+  
+  .new > .contents > .porro {
+    grid-area: 4 / 1 / 5 / 3; /* 첫 번째와 두 번째 열을 차지하는 영역 */
+    background-image: url("https://www.tottenhamhotspur.com/media/tszpg4jf/shout-in-silence-challenge-spurs-in-korea.jpg");
+    height:300px;
+    background-size: cover;
+    
+  }
+  
+  .new > .contents > .snack {
+    grid-area: 5 / 1 / 6 / 2; /* 첫 번째 열 */
+    background-image: url("https://www.tottenhamhotspur.com/media/ndupq51g/korean-snack-tasting-with-ledley-ossie.jpg");
+   
+    
+  }
+  
+  .new > .contents > .uncut {
+    grid-area: 5 / 2 / 6 / 3; /* 두 번째 열 */
+    background-image: url("https://www.tottenhamhotspur.com/media/qwdnjwa5/korea-uncut.jpg");
+     
+  }
+  
+  .new > .contents > .danso {
+    grid-area: 6 / 1 / 7 / 3;
+    background-image: url("https://www.tottenhamhotspur.com/media/2vuptovm/am019520.jpg?mode=crop&quality=90&width=1600");
+    height: 300px;
+    background-position: 1px -60px;
+  }
+  
+
+  .new > .contents > .showmore {
+    grid-column: span 2; 
+    width: 100%; 
+  
+    
+    
+    text-align: center;
+    padding: 30px 0; /* 내부 여백 추가 */
+}
+
+.new > .contents > .showmore >span{
+  border: 3px solid #000A3c;
+  font-size: 14px;
+  padding:10px;
+  font-weight: bold;
+}
+
+.new > .contents > .showmore >span:hover{
+  background-color: #000A3c;
+  transition: all 0.1s;
+  color:white;
+}
+@media (max-width: 768px) {
+  .new > .contents {
+      grid-template-columns: 1fr; 
+  }
+
+  .new > .contents > article {
+      height: 250px; 
+  }
+
+  .new > .contents > .showmore > span {
+      font-size: 12px;
+      padding: 10px 15px;
+  }
+}
