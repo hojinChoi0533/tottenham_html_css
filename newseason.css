@@ -1,0 +1,79 @@
+.newseason {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1080px;
+    height: 50vh;
+    position: relative;
+  }
+  .newseason > .contents {
+    width: 100%;
+    height: 65vh;
+  
+    position: absolute;
+    top: 1000px;
+    margin: 0 auto;
+   
+  }
+  .newseason > .contents > h2 {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .newseason > .contents > .cardlist {
+    width: 120%;
+    height: 45vh;
+  
+    padding: 30px;
+    margin: 0;
+    position: relative;
+    right: 10%; 
+    text-align: center;
+  }
+  
+  .newseason > .contents > .cardlist > .card {
+    display: inline-block;
+    width: 300px;
+   
+    height: 90%;
+    border-radius: 10px;
+  }
+  .newseason > .contents > .cardlist > .card > .album {
+    width: 100%;
+    height: 90%;
+    border-radius: 10px;
+  }
+  .newseason > .contents > .cardlist > .card > .album > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .newseason > .contents > .cardlist > .card > .album > img:hover {
+    opacity: 1;
+    transition: all 0.1s;
+  }
+  .newseason > .contents > .cardlist > .card > span {
+    font-size: 17px;
+    display: block;
+    margin-top: 7px;
+    cursor: pointer;
+    color:#0f204b;
+  }
+  .newseason > .contents > strong {
+    display: block;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+  }
+  @media (max-width: 768px) {
+    .newseason > .contents > .cardlist {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newseason > .contents > .cardlist > .card {
+        width: 90%; 
+    }
+}

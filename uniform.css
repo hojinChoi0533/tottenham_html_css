@@ -1,0 +1,68 @@
+.uniform{
+    width: 100%;
+    max-width:1600px;
+    margin: 0 auto;
+    position:relative;
+    
+}
+  
+  .uniform > .contents {
+    width: 100%;
+    
+    margin: 0 auto;;
+    height: 50vh;
+    
+    position: absolute;
+    top: 50px;
+  }
+
+  .uniform > .contents > .album{
+    width: 100%;
+    height:20vh;
+   
+    
+  }
+  .uniform > .contents > .album >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.uniform > .contents>.info{
+   
+    padding:30px 250px;
+    display:flex;
+    flex-direction: column;
+    line-height: 2.4;
+   
+}
+
+.uniform > .contents>.info>h3{
+    font-size: 26px;
+    
+}
+.uniform > .contents>.info>p{
+    font-size: 15px;
+    font-weight: 400;
+
+}
+.uniform > .contents>.info>h2{
+    margin-top: 10px;
+    font-size: 26px;
+    
+
+}
+@media (max-width: 768px) {
+  .uniform > .contents > .info {
+      padding: 20px; 
+      text-align: center;
+  }
+
+  .uniform > .contents > .info > h3 {
+      font-size: 20px;
+  }
+
+  .uniform > .contents > .info > p {
+      font-size: 14px;
+  }
+}
